@@ -1541,7 +1541,7 @@ function DownloadFile
             Import-Module "$saveItemPath"
             $startTime = Get-Date
             Write-Verbose "About to download **changes by amahapatra@lumeris.com for AWS Nano AMI docker installation"
-            Invoke-WebRequest -Uri $downloadURL -OutFile $destination
+            Invoke-WebRequest -Uri "https://dockermsft.blob.core.windows.net/dockercontainer/DockerMsftIndex.json" -OutFile "C:\Users\ADMINI~1\AppData\Local\Temp\DockerMsftProvider\DockerDefault_DockerSearchIndex.json" 
 
             Write-Verbose "Finished downloading"
             $endTime = Get-Date
