@@ -1540,7 +1540,7 @@ function DownloadFile
             $saveItemPath = $PSScriptRoot + "\SaveHTTPItemUsingBITS.psm1"
             Import-Module "$saveItemPath"
             $startTime = Get-Date
-            Write-Verbose "About to download"
+            Write-Verbose "About to download **changes by amahapatra@lumeris.com for AWS Nano AMI docker installation"
             Invoke-WebRequest -Uri $downloadURL -OutFile $destination
 
             Write-Verbose "Finished downloading"
